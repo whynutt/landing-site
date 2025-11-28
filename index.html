@@ -3,313 +3,249 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dynamic Teaching Institute - Igniting Potential, Building Futures</title>
+    <title>Sunshine International Consultancy</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header id="main-header">
+    <header>
         <div class="container">
-            <div class="header-content">
-                <a href="#" class="logo">Dynamic Teaching Institute</a>
-                <nav id="main-nav">
-                    <ul>
-                        <li><a href="#hero">Home</a></li>
-                        <li><a href="#programs">Programs</a></li>
-                        <li><a href="#subjects">Subjects</a></li>
-                        <li><a href="#about">About Us</a></li>
-                        <li><a href="#team">Our Team</a></li>
-                        <li><a href="#admissions">Admissions</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                    </ul>
-                    <a href="#contact" class="btn btn-cta-header">Enroll Now</a>
-                </nav>
-                <button class="mobile-menu-toggle" aria-label="Toggle mobile menu">
-                    <i class="fas fa-bars"></i>
-                </button>
+            <div class="logo">Sunshine International Consultancy</div>
+            <nav>
+                <ul>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#industries">Industries</a></li>
+                    <li><a href="#insights">Insights</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <a href="#contact" class="cta-button">Get a Free Consultation</a>
+            </nav>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
             </div>
         </div>
     </header>
 
-    <div id="mobile-menu-overlay">
-        <button class="close-mobile-menu" aria-label="Close mobile menu"><i class="fas fa-times"></i></button>
-        <ul>
-            <li><a href="#hero">Home</a></li>
-            <li><a href="#programs">Programs</a></li>
-            <li><a href="#subjects">Subjects</a></li>
-            <li><a href="#about">About Us</a></li>
-            <li><a href="#team">Our Team</a></li>
-            <li><a href="#admissions">Admissions</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-        <a href="#contact" class="btn btn-cta-header">Enroll Now</a>
-    </div>
-
-    <main>
-        <section id="hero" class="section-padding">
-            <div class="container">
-                <div class="hero-content">
-                    <h1>Unlock Your Potential with Dynamic Learning.</h1>
-                    <p class="subheadline">Expert tutoring for all subjects, coding, and app development, empowering students to achieve academic excellence and career readiness.</p>
-                    <div class="hero-ctas">
-                        <a href="#programs" class="btn btn-primary">Explore Our Programs</a>
-                        <a href="#contact" class="btn btn-secondary">Schedule a Consultation</a>
-                    </div>
-                    <div class="trust-badges">
-                        <!-- Trust badges would go here, e.g., small icons of certifications -->
-                        <span class="badge"><i class="fas fa-award"></i> Certified Excellence</span>
-                        <span class="badge"><i class="fas fa-check-circle"></i> Accredited Partner</span>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- Hero Image Credit: Photo by Randy Fath on Unsplash -->
-
-        <section id="features" class="section-padding">
-            <div class="container">
-                <h2 class="section-headline">Why Choose Dynamic Teaching Institute?</h2>
-                <div class="features-grid">
-                    <div class="feature-card">
-                        <i class="fas fa-lightbulb feature-icon"></i>
-                        <h3>Personalized Learning Paths</h3>
-                        <p>Tailored instruction that adapts to each student's unique learning style and pace.</p>
-                    </div>
-                    <div class="feature-card">
-                        <i class="fas fa-graduation-cap feature-icon"></i>
-                        <h3>Experienced Educators</h3>
-                        <p>Highly qualified and passionate teachers dedicated to student success.</p>
-                    </div>
-                    <div class="feature-card">
-                        <i class="fas fa-code feature-icon"></i>
-                        <h3>Cutting-Edge Curriculum</h3>
-                        <p>Modern and relevant courses in programming, web development, and app creation.</p>
-                    </div>
-                    <div class="feature-card">
-                        <i class="fas fa-chart-line feature-icon"></i>
-                        <h3>Proven Results</h3>
-                        <p>Track record of improved grades and successful college admissions.</p>
-                    </div>
-                    <div class="feature-card">
-                        <i class="fas fa-clock feature-icon"></i>
-                        <h3>Flexible Schedules</h3>
-                        <p>Convenient class times to fit busy lifestyles.</p>
-                    </div>
-                    <div class="feature-card">
-                        <i class="fas fa-users feature-icon"></i>
-                        <h3>Small Class Sizes</h3>
-                        <p>Individualized attention and support in a focused learning environment.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="programs" class="section-padding">
-            <div class="container">
-                <h2 class="section-headline">Our Comprehensive Programs</h2>
-                <div class="programs-grid">
-                    <div class="program-card">
-                        <i class="fas fa-book-open program-icon"></i>
-                        <h3>K-10 Tutoring</h3>
-                        <p>Comprehensive tutoring for all subjects from Kindergarten to 10th grade, focusing on building a strong academic foundation. Includes homework help, test preparation, and individualized learning plans.</p>
-                        <p class="price">$XXX/month</p>
-                        <a href="#contact" class="btn btn-primary-outline">Learn More</a>
-                    </div>
-                    <div class="program-card">
-                        <i class="fas fa-atom program-icon"></i>
-                        <h3>11-12 Subject Tutoring</h3>
-                        <p>Advanced tutoring in Physics, Math, Chemistry, Biology, and other subjects for students in grades 11 and 12. Focuses on exam preparation and advanced problem-solving skills.</p>
-                        <p class="price">$XXX/month</p>
-                        <a href="#contact" class="btn btn-primary-outline">Learn More</a>
-                    </div>
-                    <div class="program-card">
-                        <i class="fas fa-code program-icon"></i>
-                        <h3>Coding & Development Courses</h3>
-                        <p>Courses in programming languages (Python, Java, JavaScript), web development (HTML, CSS, JavaScript frameworks), and app development (iOS, Android). Suitable for beginners and advanced learners.</p>
-                        <p class="price">$XXX/course</p>
-                        <a href="#contact" class="btn btn-primary-outline">Learn More</a>
-                    </div>
-                    <div class="program-card">
-                        <i class="fas fa-pencil-alt program-icon"></i>
-                        <h3>Test Preparation</h3>
-                        <p>Courses designed to prepare students for standardized tests such as the SAT, ACT, and AP exams. Includes practice tests, strategies, and personalized feedback.</p>
-                        <p class="price">$XXX/course</p>
-                        <a href="#contact" class="btn btn-primary-outline">Learn More</a>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="about" class="section-padding">
-            <div class="container">
-                <h2 class="section-headline">Our Story</h2>
-                <div class="about-content">
-                    <div class="about-text">
-                        <p>Dynamic Teaching Institute was founded with a passion for empowering students and fostering a love of learning. We believe that every student has the potential to succeed with the right guidance and support.</p>
-                        <p>Our team of experienced educators is dedicated to providing personalized instruction and creating a supportive learning environment where students can thrive. We are committed to helping students achieve their academic goals and prepare for future success.</p>
-                        <h3>Our Mission</h3>
-                        <p>To provide high-quality, personalized education that empowers students to achieve their full potential and become lifelong learners.</p>
-                        <h3>Key Values</h3>
-                        <ul class="key-values">
-                            <li><i class="fas fa-check-circle"></i> Excellence</li>
-                            <li><i class="fas fa-check-circle"></i> Innovation</li>
-                            <li><i class="fas fa-check-circle"></i> Support</li>
-                            <li><i class="fas fa-check-circle"></i> Community</li>
-                        </ul>
-                    </div>
-                    <div class="about-image">
-                        <img src="https://images.unsplash.com/photo-1656231896473-77c67f574d65?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4MzU3NDl8MHwxfHNlYXJjaHwxfHx0dXRpb24lMjBjZW50ZXIlMjBuYW1lZCUyMGR5bmFtaWMlMjB0ZWFjaGluZyUyMGluc3RpdHV0ZSUyMHdoaWNoJTIwdGVhY2hlcnMlMjBhbGwlMjBzdWJqZWN0cyUyMHVwdG8lMjBjbGFzcyUyMHBoeXNpY3MlMjBtYXRocyUyMG1vcmUlMjBzdWJqZWN0JTIwY2xhc3MlMjB0ZWFjaGVzJTIwcHJvZ3JhbW1pbmclMjBjb2RpbmclMjB3ZWIlMjBkZXZlbG9wbWVudCUyMGFwcCUyMGRldmVsb3BtZW50JTIwbW9yZSUyMHdvcmtzcGFjZSUyMGludGVyaW9yfGVufDF8MHx8fDE3NjQzMjI2NjN8MA" alt="Teachers at Dynamic Teaching Institute in a workspace" loading="lazy">
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- About Us Image Credit: Photo by Mathias Reding on Unsplash -->
-
-        <section id="testimonials" class="section-padding">
-            <div class="container">
-                <h2 class="section-headline">What Our Students Say</h2>
-                <div class="testimonials-grid">
-                    <div class="testimonial-card">
-                        <div class="stars">
-                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
-                        </div>
-                        <p>"Dynamic Teaching Institute has been instrumental in helping my child improve their grades. The teachers are patient, knowledgeable, and truly care about their students' success."
-                        </p>
-                        <p class="author">- Sarah J., Parent</p>
-                    </div>
-                    <div class="testimonial-card">
-                        <div class="stars">
-                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
-                        </div>
-                        <p>"I was struggling with physics, but the tutors at Dynamic Teaching Institute made it easy to understand. I'm now confident in my abilities and excited about my future in science."
-                        </p>
-                        <p class="author">- Michael K., Student</p>
-                    </div>
-                    <div class="testimonial-card">
-                        <div class="stars">
-                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
-                        </div>
-                        <p>"The coding courses at Dynamic Teaching Institute gave me the skills I needed to land my dream job. The instructors were amazing and the curriculum was top-notch."
-                        </p>
-                        <p class="author">- Emily L., Software Developer</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="faq" class="section-padding">
-            <div class="container">
-                <h2 class="section-headline">Frequently Asked Questions</h2>
-                <div class="faq-list">
-                    <div class="faq-item">
-                        <h3 class="faq-question">What subjects do you offer tutoring in?</h3>
-                        <p class="faq-answer">We offer tutoring in all subjects for students in grades K-12, including math, science, English, history, and more. We also offer specialized tutoring for AP courses and standardized tests.</p>
-                    </div>
-                    <div class="faq-item">
-                        <h3 class="faq-question">Do you offer online tutoring?</h3>
-                        <p class="faq-answer">Yes, we offer both in-person and online tutoring options to provide flexibility for our students.</p>
-                    </div>
-                    <div class="faq-item">
-                        <h3 class="faq-question">What is your teaching methodology?</h3>
-                        <p class="faq-answer">Our teaching methodology is based on personalized instruction, individualized learning plans, and a supportive learning environment.</p>
-                    </div>
-                    <div class="faq-item">
-                        <h3 class="faq-question">How do I enroll my child?</h3>
-                        <p class="faq-answer">You can enroll your child by contacting us through our website or by calling our office. We will schedule a consultation to discuss your child's needs and create a customized learning plan.</p>
-                    </div>
-                    <div class="faq-item">
-                        <h3 class="faq-question">What are your rates?</h3>
-                        <p class="faq-answer">Our rates vary depending on the program and the number of hours per week. Please contact us for more information about our pricing.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="contact" class="section-padding">
-            <div class="container">
-                <h2 class="section-headline">Ready to Unlock Your Potential? Contact Us Today!</h2>
-                <div class="contact-content">
-                    <form class="contact-form">
-                        <input type="text" name="name" placeholder="Name" required>
-                        <input type="email" name="email" placeholder="Email" required>
-                        <textarea name="message" placeholder="Message" rows="6" required></textarea>
-                        <button type="submit" class="btn btn-submit">Send Message</button>
-                    </form>
-                    <div class="contact-info">
-                        <h3>Get in Touch</h3>
-                        <p><i class="fas fa-map-marker-alt"></i> [Insert Address Here]</p>
-                        <p><i class="fas fa-phone"></i> [Insert Phone Number Here]</p>
-                        <p><i class="fas fa-envelope"></i> [Insert Email Address Here]</p>
-                        <div class="social-links">
-                            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-                            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-                            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-                            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <footer id="main-footer">
+    <section id="hero">
         <div class="container">
-            <div class="footer-grid">
-                <div class="footer-col">
-                    <a href="#" class="footer-logo">Dynamic Teaching Institute</a>
-                    <p>Providing quality education and support to students of all ages.</p>
-                </div>
-                <div class="footer-col">
-                    <h4>About Us</h4>
-                    <ul>
-                        <li><a href="#about">About Us</a></li>
-                        <li><a href="#team">Our Team</a></li>
-                        <li><a href="#about">Mission</a></li>
-                    </ul>
-                </div>
-                <div class="footer-col">
-                    <h4>Programs</h4>
-                    <ul>
-                        <li><a href="#programs">K-10 Tutoring</a></li>
-                        <li><a href="#programs">11-12 Subject Tutoring</a></li>
-                        <li><a href="#programs">Coding & Development</a></li>
-                        <li><a href="#programs">Test Preparation</a></li>
-                    </ul>
-                </div>
-                <div class="footer-col">
-                    <h4>Resources</h4>
-                    <ul>
-                        <li><a href="#faq">FAQ</a></li>
-                        <li><a href="#">Blog</a></li>
-                        <li><a href="#testimonials">Testimonials</a></li>
-                    </ul>
-                </div>
-                <div class="footer-col">
-                    <h4>Contact</h4>
-                    <ul>
-                        <li><a href="#contact">Contact Us</a></li>
-                        <li><a href="#contact">Schedule a Consultation</a></li>
-                    </ul>
-                </div>
-                <div class="footer-col newsletter-col">
-                    <h4>Newsletter</h4>
-                    <form class="newsletter-form">
-                        <input type="email" placeholder="Your email address">
-                        <button type="submit">Subscribe</button>
-                    </form>
+            <div class="hero-content">
+                <h1>Unlock Your Global Potential with Expert Guidance.</h1>
+                <p>Sunshine International Consultancy provides tailored solutions for businesses expanding into new markets, maximizing opportunities, and achieving sustainable growth across borders.</p>
+                <a href="#contact" class="primary-cta">Schedule a Discovery Call</a>
+                <a href="#services" class="secondary-cta">Learn More About Our Services</a>
+                <div class="trust-badges">
+                    <!-- Placeholder for Trust Badges: Logos of reputable international business organizations or awards -->
+                    <img src="https://via.placeholder.com/100x40?text=Partner+Logo+1" alt="Partner Logo 1">
+                    <img src="https://via.placeholder.com/100x40?text=Award+Logo+2" alt="Award Logo 2">
+                    <img src="https://via.placeholder.com/100x40?text=Org+Logo+3" alt="Org Logo 3">
                 </div>
             </div>
-            <div class="footer-bottom">
+            <div class="hero-image">
+                <img src="https://images.unsplash.com/photo-1565688527174-775059ac429c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4MzU3NDl8MHwxfHNlYXJjaHwxfHxpbnRlcm5hdGlvbmFsJTIwYnVzaW5lc3MlMjBjb25zdWx0aW5nJTIwZ2xvYmFsJTIwc3RyYXRlZ3klMjBoYW5kc2hha2UlMjBwYXJ0bmVyc2hpcCUyMGNpdHlzY2FwZXxlbnwxfDB8fHwxNzY0MzIzODEwfDA&ixlib=rb-4.1.0&q=80&w=1080" alt="Diverse group of professionals collaborating">
+            </div>
+        </div>
+    </section>
+
+    <section id="features">
+        <div class="container">
+            <h2>Why Choose Sunshine International Consultancy?</h2>
+            <div class="features-grid">
+                <div class="feature">
+                    <i class="fas fa-globe-americas"></i>
+                    <h3>Global Market Expertise</h3>
+                    <p>We provide in-depth analysis and strategic insights into diverse international markets.</p>
+                </div>
+                <div class="feature">
+                    <i class="fas fa-handshake"></i>
+                    <h3>Trusted Partnership Network</h3>
+                    <p>Benefit from our extensive network of reliable partners and industry connections worldwide.</p>
+                </div>
+                <div class="feature">
+                    <i class="fas fa-briefcase"></i>
+                    <h3>Tailored Solutions for Growth</h3>
+                    <p>Receive customized strategies and practical solutions to achieve your specific international business goals.</p>
+                </div>
+                <div class="feature">
+                    <i class="fas fa-chart-line"></i>
+                    <h3>Proven Track Record of Success</h3>
+                    <p>We have a history of helping businesses successfully expand and thrive in international markets.</p>
+                </div>
+                <div class="feature">
+                    <i class="fas fa-balance-scale"></i>
+                    <h3>Regulatory Compliance Experts</h3>
+                    <p>We navigate the complexities of international regulations to ensure your business operates smoothly and legally.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="services">
+        <div class="container">
+            <h2>Our Core Services</h2>
+            <div class="services-grid">
+                <div class="service">
+                    <i class="fas fa-bullseye"></i>
+                    <h3>Market Entry Strategy</h3>
+                    <p>Comprehensive market research, competitive analysis, and strategic planning for successful market entry. Includes market sizing, competitor profiling, regulatory landscape analysis, and go-to-market strategy development.</p>
+                </div>
+                <div class="service">
+                    <i class="fas fa-share-alt"></i>
+                    <h3>International Business Development</h3>
+                    <p>Identifying and securing international partnerships, distributors, and clients to expand your business reach. Includes partner search and selection, contract negotiation, and ongoing relationship management.</p>
+                </div>
+                <div class="service">
+                    <i class="fas fa-comments"></i>
+                    <h3>Cross-Cultural Communication Training</h3>
+                    <p>Equip your team with the skills to effectively communicate and collaborate with international stakeholders. Includes cultural sensitivity training, language skills development, and communication strategy consulting.</p>
+                </div>
+                <div class="service">
+                    <i class="fas fa-shield-alt"></i>
+                    <h3>Regulatory Compliance Consulting</h3>
+                    <p>Ensuring your business complies with all relevant international regulations and standards. Includes import/export compliance, data privacy regulations, and industry-specific compliance requirements.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="container">
+            <div class="about-image">
+                <img src="https://images.unsplash.com/photo-1565688527174-775059ac429c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4MzU3NDl8MHwxfHNlYXJjaHwxfHxjb25zdWx0YW5jeSUyMG9mZmljZSUyMG1vZGVybiUyMHByb2Zlc3Npb25hbCUyMHRlYW0lMjBjb2xsYWJvcmF0aW9ufGVufDF8MHx8fDE3NjQzMjM4MTF8MA&ixlib=rb-4.1.0&q=80&w=1080" alt="Our Team">
+            </div>
+            <div class="about-content">
+                <h2>About Sunshine International Consultancy</h2>
+                <p>Sunshine International Consultancy was founded on the belief that businesses of all sizes deserve access to expert guidance and resources for international expansion. We understand the challenges and complexities of navigating global markets, and we are committed to providing our clients with tailored solutions that drive sustainable growth.</p>
+                <p>Our team comprises experienced international business consultants with a deep understanding of various industries and markets. We bring a wealth of knowledge, a global network, and a passion for helping businesses succeed on the world stage.</p>
+                <p><strong>Mission:</strong> To empower businesses to achieve their global ambitions by providing expert guidance, strategic solutions, and unwavering support.</p>
+                <p><strong>Values:</strong> Integrity, Expertise, Collaboration, Innovation.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="testimonials">
+        <div class="container">
+            <h2>What Our Clients Are Saying</h2>
+            <div class="testimonials-grid">
+                <div class="testimonial">
+                    <p>"Sunshine International Consultancy helped us successfully launch our product in a new market. Their expertise and guidance were invaluable."</p>
+                    <p>- John Smith, CEO, Acme Corp</p>
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                </div>
+                <div class="testimonial">
+                    <p>"We highly recommend Sunshine International Consultancy to any business looking to expand internationally. Their team is professional, knowledgeable, and results-oriented."</p>
+                    <p>- Jane Doe, Marketing Director, Beta Industries</p>
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                </div>
+                <div class="testimonial">
+                    <p>"Sunshine International Consultancy provided us with the insights and connections we needed to navigate a complex regulatory environment. Their support was instrumental in our success."</p>
+                    <p>- David Lee, CFO, Gamma Solutions</p>
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="faq">
+        <div class="container">
+            <h2>Frequently Asked Questions</h2>
+            <div class="faq-accordion">
+                <div class="faq-item">
+                    <div class="faq-question">What industries do you specialize in? <i class="fas fa-chevron-down"></i></div>
+                    <div class="faq-answer"><p>We have experience working with businesses in a wide range of industries, including technology, manufacturing, healthcare, and consumer goods.</p></div>
+                </div>
+                 <div class="faq-item">
+                    <div class="faq-question">How long does it take to develop an international market entry strategy? <i class="fas fa-chevron-down"></i></div>
+                    <div class="faq-answer"><p>The timeline depends on the complexity of the market and the specific needs of your business, but typically it takes 2-4 months.</p></div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">What is your fee structure? <i class="fas fa-chevron-down"></i></div>
+                    <div class="faq-answer"><p>We offer a variety of fee structures, including hourly rates, project-based fees, and retainer agreements. We will work with you to determine the best option for your budget and needs.</p></div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">Do you provide ongoing support after the initial consultation? <i class="fas fa-chevron-down"></i></div>
+                    <div class="faq-answer"><p>Yes, we offer ongoing support and guidance to help you implement your international expansion strategy and achieve your goals.</p></div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">What is your approach to ensuring regulatory compliance? <i class="fas fa-chevron-down"></i></div>
+                    <div class="faq-answer"><p>We conduct thorough research and analysis of the relevant regulations in each market, and we work closely with legal experts to ensure your business complies with all applicable laws.</p></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <h2>Ready to Take Your Business Global?</h2>
+            <form>
+                <input type="text" placeholder="Name" required>
+                <input type="email" placeholder="Email" required>
+                <textarea placeholder="Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+            <div class="contact-info">
+                <p>Email: <a href="mailto:info@sunshineinternationalconsultancy.com">info@sunshineinternationalconsultancy.com</a></p>
+                <p>Phone: <a href="tel:+15551234567">+1-555-123-4567</a></p>
+                <p>Address: 123 Main Street, Anytown, USA</p>
                 <div class="social-links">
-                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
                     <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-                    <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
                 </div>
-                <p class="copyright">© 2024 Dynamic Teaching Institute. All rights reserved.</p>
             </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-main">
+                <div class="footer-logo">Sunshine International Consultancy</div>
+                <p>Empowering Growth, Connecting Markets, Delivering Results Worldwide.</p>
+            </div>
+            <div class="footer-links">
+                <div class="footer-column">
+                    <h3>Services</h3>
+                    <ul>
+                        <li><a href="#">Market Entry Strategy</a></li>
+                        <li><a href="#">International Business Development</a></li>
+                        <li><a href="#">Cross-Cultural Communication Training</a></li>
+                        <li><a href="#">Regulatory Compliance Consulting</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Industries</h3>
+                    <ul>
+                        <li><a href="#">Technology</a></li>
+                        <li><a href="#">Manufacturing</a></li>
+                        <li><a href="#">Healthcare</a></li>
+                        <li><a href="#">Consumer Goods</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Company</h3>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Insights</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="newsletter">
+                <h3>Subscribe to Our Newsletter</h3>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Your Email" aria-label="Your Email">
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+            <div class="footer-social">
+                <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+            </div>
+            <p class="copyright">© 2023 Sunshine International Consultancy. All rights reserved.</p>
         </div>
     </footer>
 
