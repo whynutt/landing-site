@@ -1,85 +1,60 @@
 document.addEventListener('DOMContentLoaded', () => {
-    // Mobile Menu Toggle
-    const mobileMenuToggle = document.querySelector('.mobile-menu-toggle');
-    const mobileMenuOverlay = document.getElementById('mobile-menu-overlay');
-    const closeMobileMenu = document.querySelector('.close-mobile-menu');
+    // Hamburger Menu Toggle
+    const hamburger = document.querySelector('.hamburger');
+    const nav = document.querySelector('header nav');
 
-    mobileMenuToggle.addEventListener('click', () => {
-        mobileMenuOverlay.classList.add('active');
-        document.body.style.overflow = 'hidden'; // Prevent scrolling when menu is open
+    hamburger.addEventListener('click', () => {
+        hamburger.classList.toggle('active');
+        nav.classList.toggle('active');
     });
 
-    closeMobileMenu.addEventListener('click', () => {
-        mobileMenuOverlay.classList.remove('active');
-        document.body.style.overflow = ''; // Restore scrolling
-    });
-
-    // Close mobile menu when a link is clicked
-    mobileMenuOverlay.querySelectorAll('a').forEach(link => {
+    // Close mobile nav on link click
+    document.querySelectorAll('header nav ul li a, header nav .cta-button').forEach(link => {
         link.addEventListener('click', () => {
-            mobileMenuOverlay.classList.remove('active');
-            document.body.style.overflow = '';
-        });
-    });
-
-    // Sticky Header
-    const header = document.getElementById('main-header');
-    const stickyScrollPoint = 50; // Pixels from top to activate sticky header
-
-    window.addEventListener('scroll', () => {
-        if (window.scrollY > stickyScrollPoint) {
-            header.classList.add('sticky');
-        } else {
-            header.classList.remove('sticky');
-        }
-    });
-
-    // Smooth Scroll for anchor links
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener('click', function (e) {
-            e.preventDefault();
-
-            const targetId = this.getAttribute('href');
-            const targetElement = document.querySelector(targetId);
-
-            if (targetElement) {
-                // Calculate offset for sticky header
-                const headerOffset = header.offsetHeight;
-                const elementPosition = targetElement.getBoundingClientRect().top + window.pageYOffset;
-                const offsetPosition = elementPosition - headerOffset;
-
-                window.scrollTo({
-                    top: offsetPosition,
-                    behavior: 'smooth'
-                });
+            if (nav.classList.contains('active')) {
+                hamburger.classList.remove('active');
+                nav.classList.remove('active');
             }
         });
     });
 
-    // Basic Form Submission (Contact & Newsletter)
-    const contactForm = document.querySelector('#contact .contact-form');
-    if (contactForm) {
-        contactForm.addEventListener('submit', function(e) {
-            e.preventDefault();
-            console.log('Contact form submitted!');
-            const formData = new FormData(this);
-            for (let [name, value] of formData.entries()) {
-                console.log(`${name}: ${value}`);
-            }
-            alert('Thank you for your message! We will get back to you soon.');
-            this.reset();
-        });
-    }
+    // FAQ Accordion
+    const faqQuestions = document.querySelectorAll('.faq-question');
 
-    const newsletterForm = document.querySelector('#main-footer .newsletter-form');
-    if (newsletterForm) {
-        newsletterForm.addEventListener('submit', function(e) {
-            e.preventDefault();
-            console.log('Newsletter subscription submitted!');
-            const emailInput = this.querySelector('input[type="email"]');
-            console.log(`Email: ${emailInput.value}`);
-            alert('Thank you for subscribing to our newsletter!');
-            this.reset();
+    faqQuestions.forEach(question => {
+        question.addEventListener('click', () => {
+            const faqItem = question.closest('.faq-item');
+            const answer = faqItem.querySelector('.faq-answer');
+
+            // Toggle 'open' class for styling and 'active' for icon/question style
+            question.classList.toggle('active');
+            answer.classList.toggle('open');
+
+            // Set max-height for smooth transition
+            if (answer.classList.contains('open')) {
+                answer.style.maxHeight = answer.scrollHeight + 'px';
+                answer.style.paddingTop = '20px';
+                answer.style.paddingBottom = '20px';
+            } else {
+                answer.style.maxHeight = '0';
+                answer.style.paddingTop = '0';
+                answer.style.paddingBottom = '0';
+            }
+
+            // Optional: Close other open FAQs
+            faqQuestions.forEach(otherQuestion => {
+                if (otherQuestion !== question) {
+                    const otherFaqItem = otherQuestion.closest('.faq-item');
+                    const otherAnswer = otherFaqItem.querySelector('.faq-answer');
+                    if (otherAnswer.classList.contains('open')) {
+                        otherQuestion.classList.remove('active');
+                        otherAnswer.classList.remove('open');
+                        otherAnswer.style.maxHeight = '0';
+                        otherAnswer.style.paddingTop = '0';
+                        otherAnswer.style.paddingBottom = '0';
+                    }
+                }
+            });
         });
-    }
+    });
 });
